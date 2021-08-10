@@ -1,0 +1,26 @@
+.slick-slide img {
+  transform: scale(.8);
+  transition: transform .3s;
+  border-radius: 10px;
+  width: 100%;
+} 
+.slick-slide{
+  width: 100%;
+}
+
+.slick-center img {
+  border-radius: 10px;
+  transform: scale(1);
+}
+.slick-prev, .slick-next{
+  height: 48px;
+  width: 48px;
+}
+
+.slick-dots li button:before{
+  color: white;
+  font-size: 9px;
+}
+.slick-dots li.slick-active button:before{
+  color: white;
+}

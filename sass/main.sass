@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap')
+@font-face
+    font-family: 'specify'
+    src: url('../assets/specify-extended-bold.ttf') format('truetype')
+*
+    padding: 0px
+    margin: 0px
+    border: 0px
+    color: white
+    scroll-behavior: smooth
+    cursor: url(/assets/cursor.svg), auto
+    box-sizing: border-box
+img, svg
+    max-width: 100%
+.container
+    @media ( max-width: 480px )
+        padding: 0 20px
+html, body
+    height: 100%
+    width: 100%
+    max-width: 100%
+body
+    background: #0A0A0A
+    margin-top: 184px
+h1
+    font-family: 'specify'
+    font-style: normal
+    font-weight: bold
+    font-size: 4rem
+h2
+    font-family: 'specify'
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 50px
+    color: #FFFFFF
+    text-transform: capitalize
+    margin-bottom: 12px
+p, a
+    font-family: Rubik
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+.navbar
+    background: rgba(10, 10, 10, 0.4)
+    // backdrop-filter: blur(24px)
+
+header
+    display: flex
+    justify-content: center
+    align-items: ceter
+    flex-direction: column
+    .title
+        width: 100%
+        position: relative
+        margin-bottom: 60px
+        text-align: center
+        img
+            position: absolute
+            // bottom: 43px
+            // right: 238px
+    .subtitle
+        margin-bottom: 100px
+    button
+        align-self: center
+        background: #FFFFFF
+        border-radius: 46px
+        padding: 18px 36px
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 28px
+        color: #0A0A0A
+        margin-bottom: 80px
+        @media ( max-width:  480px)
+            font-size: 14px
+            line-height: 28px
+            font-weight: normal
+            padding: 8px 16px
+        img
+            margin-left: 15px
+    .brand-section
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        div
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 48px
+            width: 260px
+    .separator
+        margin-bottom: 40px
+    p
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #7B7B7B
+#intro
+    padding: 200px 0px 0px
+    margin-bottom: 6rem
+    .self
+        position: absolute
+        bottom: 0
+        right: 12%
+        p
+            background: none
+            color: #7B7B7B !important
+    .experience
+        position: absolute
+        left: 13%
+        top: 61%
+        img
+            height: 40px
+            width: 40px
+            margin-bottom: 16px
+        p
+            background: none
+            color: #7B7B7B !important
+    .variation
+        width: 400px
+        text-align: left
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        line-height: 89px
+        letter-spacing: 0.08em
+        background: none
+        color: transparent !important
+        -webkit-text-stroke: 1.2px white
+#selected
+    padding-top: 120px
+    & a
+        text-decoration: none !important
+    .selected
+        overflow: hidden
+        background: linear-gradient(180deg, #222323 0%, rgba(34, 35, 35, 0) 100%)
+        height: 520px
+        border-radius: 20px
+        margin-bottom: 30px
+        @media ( min-width: 640px  )
+            height: 720px
+            border-radius: 40px
+            margin-bottom: 60px
+        &__header
+            padding: 40px
+            width: 100%
+            h3
+                font-family: Rubik
+                font-style: normal
+                font-weight: normal
+                font-size: 36px
+                line-height: 43px
+                text-align: right
+                font-weight: 400
+                @media (max-width: 280px )
+                    font-size: 20px
+                    line-height: 23px
+            p
+                text-transform: capitalize
+                text-align: right
+            label
+                background: #2194FF
+                padding: 8px
+                line-height: 100%
+                text-transform: capitalize
+        &__body
+            position: relative
+            height: 100%
+            padding: 0 40px
+            img
+                max-width: 100%
+                position: absolute
+                left: 0
+                bottom: 0
+#visual
+    padding-top: 120px
+#blogs
+    padding-top: 120px
+    // height: 70vh
+    .blogs
+        position: relative
+        padding: 20px
+        height: 488px
+        img
+            max-width: 100%
+        &::after
+            content: 'GOOD THINGS TAKE TIME'
+            z-index: 2
+            font-family: Rubik
+            font-style: normal
+            font-weight: normal
+            font-size: 3vw
+            line-height: 28px
+            text-align: center
+            letter-spacing: 0.5em
+            display: flex
+            position: absolute
+            top: 0
+            left: 0
+            align-items: center
+            justify-content: center
+            height: 100%
+            width: 100%
+            @media (min-width: 480px)
+                font-size: 24px !important
+        &::before
+            content: ''
+            display: flex
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            z-index: 1
+            background: white
+            background: rgba(10, 10, 10, 0.7)
+            backdrop-filter: blur(24px)
+.bintang-60
+    display: flex
+    margin: 40px auto
+    height: 60px
+    width: 60px
+footer
+    padding: 120px 220px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: white
+    cursor: auto
+    h2
+        color: black !important
+        text-transform: unset
+        margin: 0 auto
+        cursor: default
+    .social
+        width: 100%
+        max-width: 100%
+        margin-top: 84px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        cursor: default
+        a
+            cursor: pointer
+            font-family: Rubik
+            font-style: normal
+            text-decoration: none
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            text-align: center
+            letter-spacing: 0.5em
+            color: #000000
+            text-transform: uppercase
+.top
+    position: fixed
+    z-index: 3
+    bottom: 4vh
+    right: 4vh
+@media (min-width:992px)
+    .offcanvas
+        visibility: visible
+        position: relative
+        border: none
+        justify-content: flex-end
+        color: red
+        width: 600px
+        .navbar-nav
+            justify-content: space-between
+            align-items: center
+
+@media (max-width:720px)
+    h2
+        font-size: 20px
+        line-height: 28px
+    header
+        .title
+            font-size: 6vw
+            line-height: 135%
+            font-weight: normal
+            text-align: center
+            background: -webkit-linear-gradient(90.03deg, #FFFFFF 0.01%, #ADC1E0 99.96%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            margin-bottom: 20px
+            img
+                height: 4vw
+        .subtitle
+            font-size: 12px
+            line-height: 14px
+            margin-bottom: 60px
+        > img
+            height: 30%
+            right: 0px
+            bottom: 15px
+        button
+            margin-bottom: 40px
+        .brand-section
+            flex-wrap: wrap
+            flex-direction: row
+            div
+                width: 130px
+                hegiht: 24px
+            .bukalapak
+                width: 100%
+                margin-bottom: 26px
+
+    .offcanvas
+        width: 100%
+        backdrop-filter: blur(24px)
+        .navbar-nav
+            display: flex
+            height: 100%
+            justify-content: flex-end
+            align-items: center
+            padding: 40px
+            li
+                margin-top: 40px
+            li:nth-last-child(1)
+                margin-top: 66px
+
+    .offcanvas-start-lg
+        background-color: rgba(10, 10, 10, 0.4) !important
+        top: 0
+        left: 0
+        border-right: 1px solid rgba(0,0,0,.2)
+        transform: translateX(-100%)
+        .navbar-nav
+            li
+                a
+                    color: #fff!important
+
+    #intro
+        // padding: 40px
+        // > img
+        //     height: 90%
+        .self
+            right: 0
+            left: 20%
+            max-width: 100%
+            left: 242px
+            max-width: 100%
+
+        .experience
+            align-items: center
+            top: 60px
+            left: auto
+        .variation
+            white-space: pre-wrap
+            width: auto
+            font-size: 9vw
+            line-height: 135%
+
+        p
+            font-size: 2.1vw
+            line-height: 135%
+    footer
+        padding: 60px 20px
+        h2
+            text-align: center
+            font-size: 20px
+            line-height: 28px
+        .social
+            flex-direction: column
+            justify-content: start
+            a
+                margin-bottom: 32px
