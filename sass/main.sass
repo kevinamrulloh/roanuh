@@ -150,6 +150,11 @@ header
         &__header
             padding: 40px
             width: 100%
+            p
+                text-transform: capitalize
+                color: #787878
+                text-align: right
+                margin-bottom: 20px
             h3
                 font-family: Rubik
                 font-style: normal
@@ -158,21 +163,17 @@ header
                 line-height: 43px
                 text-align: right
                 font-weight: 400
-                @media (max-width: 280px )
-                    font-size: 20px
-                    line-height: 23px
-            p
-                text-transform: capitalize
-                text-align: right
+                margin-bottom: 20px
             label
                 background: #2194FF
                 padding: 8px
-                line-height: 100%
+                font-size: 12px
+                line-height: 14px
                 text-transform: capitalize
         &__body
             position: relative
             height: 100%
-            padding: 0 40px
+            padding: 0px 40px
             img
                 max-width: 100%
                 position: absolute
@@ -261,10 +262,17 @@ footer
             color: #000000
             text-transform: uppercase
 .top
+    display: none
     position: fixed
     z-index: 3
-    bottom: 4vh
-    right: 4vh
+    bottom: 36px
+    right: 36px
+    // overflow: hidden
+    border-radius: 250px
+    box-shadow: 0px 6px 21px rgba(47, 70, 104, 0.16)
+    img
+        height: 48px
+        width: 48px
 @media (min-width:992px)
     .offcanvas
         visibility: visible
@@ -278,13 +286,30 @@ footer
             align-items: center
 
 @media (max-width:720px)
+    .top
+        bottom: 20px 
+        right: 20px 
+        img
+            height: 36px
+            width: 36px
+    .flex-grow-1.custom
+        flex-grow: 1.3 !important
+    .navbar-toggler
+        height: 24px
+        width: 24px
+        padding: 0px !important
+        margin: 0px !important
+    .nuha
+        height: 48px
+    body
+        margin-top: 90px
     h2
         font-size: 20px
         line-height: 28px
     header
         .title
-            font-size: 6vw
-            line-height: 135%
+            font-size: 24px
+            line-height: 33px
             font-weight: normal
             text-align: center
             background: -webkit-linear-gradient(90.03deg, #FFFFFF 0.01%, #ADC1E0 99.96%)
@@ -307,10 +332,14 @@ footer
             flex-wrap: wrap
             flex-direction: row
             div
-                width: 130px
-                hegiht: 24px
+                height: min-content
+                width: auto
+                width: 84px
+                height: 20px
             .bukalapak
-                width: 100%
+                width: 124px
+                height: 20px
+                margin: 0px 70px
                 margin-bottom: 26px
 
     .offcanvas
@@ -337,30 +366,48 @@ footer
             li
                 a
                     color: #fff!important
-
+    #selected
+        .selected
+            height: min-content
+            &__header
+                p
+                    font-size: 12px
+                    line-height: 14px
+                    margin-bottom: 8px
+                h3
+                    font-size: 20px
+                    line-height: 24px
+                    margin-bottom: 20px
+                label
+                    font-size: 10px
+                    line-height: 12px
+                    padding: 6px 8px
+            &__body
+                position: relative
+                img
+                    position: relative
     #intro
-        // padding: 40px
-        // > img
-        //     height: 90%
+        overflow: hidden
+        padding: 180px 0px 0px
+        img
+            max-width: 80vw
         .self
             right: 0
-            left: 20%
-            max-width: 100%
-            left: 242px
             max-width: 100%
 
         .experience
             align-items: center
             top: 60px
             left: auto
+            img
+                height: 8vw
         .variation
             white-space: pre-wrap
-            width: auto
+            width: min-content
             font-size: 9vw
             line-height: 135%
-
         p
-            font-size: 2.1vw
+            font-size: 4vw
             line-height: 135%
     footer
         padding: 60px 20px
@@ -373,3 +420,5 @@ footer
             justify-content: start
             a
                 margin-bottom: 32px
+                font-size: 14px
+                line-height: 17px
