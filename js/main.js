@@ -43,8 +43,13 @@ function clickHandler(e) {
 //Get the button:
 mybutton = document.getElementById("top");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+// resize navbar
+navbarsticker = document.getElementById("sticker");
+
+// When the user scrolls down 20px from the top of the document, show the button & resize sticker
+window.onscroll = function () { scrollFunction(), resizeNavbar() };
+
+// window.onscroll = function () { resizeNavbar() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
@@ -53,6 +58,32 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+function resizeNavbar() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    navbarsticker.style.height = "55px";
+  } else {
+    navbarsticker.style.height = "84px";
+  }
+}
+// function resizeNavbar() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     navbarsticker.style.height = "24px";
+//   } else {
+//     navbarsticker.style.height = "84px";
+//   }
+// }
+
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.getElementById("navbar").style.padding = "30px 10px";
+//     document.getElementById("logo").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("navbar").style.padding = "80px 10px";
+//     document.getElementById("logo").style.fontSize = "35px";
+//   }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

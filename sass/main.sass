@@ -56,6 +56,10 @@ header
         position: relative
         margin-bottom: 60px
         text-align: center
+        // background: linear-gradient(90deg, #FFFFFF 0%, #ADC1E0 100%)
+        background: linear-gradient(90deg, #FFFFFF 0%, #ADC1E0 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
         img
             position: absolute
             // bottom: 43px
@@ -284,11 +288,13 @@ footer
         .navbar-nav
             justify-content: space-between
             align-items: center
+            #sticker
+                transition: all .5s ease-out
 
 @media (max-width:720px)
     .top
-        bottom: 20px 
-        right: 20px 
+        bottom: 20px
+        right: 20px
         img
             height: 36px
             width: 36px
@@ -308,6 +314,8 @@ footer
         line-height: 28px
     header
         .title
+            margin: 0px 6vw
+            width: auto
             font-size: 24px
             line-height: 33px
             font-weight: normal
@@ -339,7 +347,7 @@ footer
             .bukalapak
                 width: 124px
                 height: 20px
-                margin: 0px 70px
+                margin: 0px 100px
                 margin-bottom: 26px
 
     .offcanvas
@@ -406,8 +414,9 @@ footer
             width: min-content
             font-size: 9vw
             line-height: 135%
+            -webkit-text-stroke: .8px white
         p
-            font-size: 4vw
+            font-size: 3vw
             line-height: 135%
     footer
         padding: 60px 20px
