@@ -44,8 +44,8 @@ p, a
     line-height: 24px
 .navbar
     background: rgba(10, 10, 10, 0.4)
+    // background: #312a2a
     // backdrop-filter: blur(24px)
-
 header
     display: flex
     justify-content: center
@@ -284,12 +284,32 @@ footer
         border: none
         justify-content: flex-end
         color: red
-        width: 600px
+        // width: 600px
+        // .offcanvas-body
+        //     overflow-y: unset
         .navbar-nav
-            justify-content: space-between
+            // justify-content: space-between
             align-items: center
-            #sticker
-                transition: all .5s ease-out
+            .nav-item
+                margin: 0 30px
+                &:nth-child(1)
+                    margin-left: 0px
+                &:nth-last-child(2)
+                    margin-right: 0px
+                .nav-link
+                    padding: 0px   
+            // #logo-wrapper
+                // height: 100%
+                // width: 100%
+            #logo-wrapper
+                max-width: unset
+                height: 84px
+                // width: 84px
+                transition: all .2s ease-in-out
+                display: flex
+                justify-content: center
+                .logo
+                    height: 100%
 
 @media (max-width:720px)
     .top

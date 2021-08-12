@@ -39,18 +39,11 @@ function clickHandler(e) {
   });
 }
 
-
 //Get the button:
 mybutton = document.getElementById("top");
-
-// resize navbar
-navbarsticker = document.getElementById("sticker");
-
-// When the user scrolls down 20px from the top of the document, show the button & resize sticker
-window.onscroll = function () { scrollFunction(), resizeNavbar() };
-
-// window.onscroll = function () { resizeNavbar() };
-
+navbarsticker = document.getElementById("logo-wrapper");
+// window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { resizeNavbar(), scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
     mybutton.style.display = "block";
@@ -58,11 +51,21 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+// resize navbar
+
+// When the user scrolls down 20px from the top of the document, show the button & resize sticker
+
+// window.onscroll = function () { resizeNavbar() };
+
 function resizeNavbar() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    navbarsticker.style.height = "55px";
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbarsticker.style.height = "50px",
+    navbarsticker.style.width = "84px";
   } else {
-    navbarsticker.style.height = "84px";
+    // navbarsticker.style.height = "84px",
+    navbarsticker.style.height = "84px",
+    navbarsticker.style.width = "84px";
   }
 }
 // function resizeNavbar() {

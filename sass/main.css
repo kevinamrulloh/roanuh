@@ -443,19 +443,38 @@ footer .social a {
         -ms-flex-pack: end;
             justify-content: flex-end;
     color: red;
-    width: 600px;
   }
   .offcanvas .navbar-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .offcanvas .navbar-nav #sticker {
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+  .offcanvas .navbar-nav .nav-item {
+    margin: 0 30px;
+  }
+  .offcanvas .navbar-nav .nav-item:nth-child(1) {
+    margin-left: 0px;
+  }
+  .offcanvas .navbar-nav .nav-item:nth-last-child(2) {
+    margin-right: 0px;
+  }
+  .offcanvas .navbar-nav .nav-item .nav-link {
+    padding: 0px;
+  }
+  .offcanvas .navbar-nav #logo-wrapper {
+    max-width: unset;
+    height: 84px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offcanvas .navbar-nav #logo-wrapper .logo {
+    height: 100%;
   }
 }
 
