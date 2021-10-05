@@ -64,6 +64,7 @@ p, a {
 
 .navbar {
   background: rgba(10, 10, 10, 0.4);
+  z-index: 9999;
 }
 
 header {
