@@ -231,6 +231,13 @@ main .wrap #about .desc .block .answer {
   line-height: 43px;
   color: #ffffff;
 }
+main .wrap #about .desc.smaller {
+  justify-content: flex-end;
+}
+main .wrap #about .desc.smaller h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
 main .wrap #selected {
   display: flex;
   flex-direction: column;
