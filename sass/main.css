@@ -89,7 +89,7 @@ header {
   flex-direction: column;
   height: 620px;
   overflow: auto;
-  background-image: url("../assets/img/ambiance 2/ambience@3x.png");
+  background-image: url("../assets/img/ambience 2/ambience@3x.png");
   background-size: cover;
   background-position: bottom;
 }
