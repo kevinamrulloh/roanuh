@@ -232,6 +232,7 @@ main .wrap #about .desc .block .answer {
   color: #ffffff;
 }
 main .wrap #about .desc.smaller {
+  padding: 36px;
   justify-content: flex-end;
 }
 main .wrap #about .desc.smaller h1 {
