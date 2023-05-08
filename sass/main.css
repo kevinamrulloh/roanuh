@@ -104,6 +104,8 @@ header .title {
 }
 header .title img {
   position: absolute;
+  top: 70px;
+  right: 210px;
 }
 header .subtitle {
   margin-bottom: 100px;
