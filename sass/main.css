@@ -104,8 +104,6 @@ header .title {
 }
 header .title img {
   position: absolute;
-  top: 70px;
-  right: 210px;
 }
 header .subtitle {
   margin-bottom: 100px;
@@ -251,6 +249,11 @@ main #selected {
   flex-direction: column;
   gap: 40px;
 }
+main #selected h2 {
+  text-align: center;
+  font-family: specify;
+  font-weight: 700;
+}
 main #selected .wrap {
   display: flex;
   flex-direction: column;
@@ -282,7 +285,7 @@ main #selected .selected__header p {
   margin-bottom: 20px;
 }
 main #selected .selected__header h3 {
-  font-family: Uber Bold;
+  font-family: Uber Medium;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -309,7 +312,8 @@ main #selected .selected__body img {
   left: 0;
   bottom: 0;
 }
-main #selected #visual h2 {
+main #visual h2 {
+  font-weight: 700;
   text-align: center;
   font-family: specify;
 }
@@ -331,6 +335,11 @@ footer {
   cursor: auto;
 }
 footer h2 {
+  font-family: specify;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
   color: black !important;
   text-transform: unset;
   margin: 0 auto;
