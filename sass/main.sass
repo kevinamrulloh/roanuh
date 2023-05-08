@@ -2,6 +2,20 @@
 @font-face
     font-family: 'specify'
     src: url('../assets/specify-extended-bold.ttf') format('truetype')
+
+@font-face
+    font-family: 'Uber Medium'
+    src: url('../assets/font/UberMove/UberMove-Medium.otf') format('opentype')
+@font-face
+    font-family: 'Uber Bold'
+    src: url('../assets/font/UberMove/UberMove-Bold.otf') format('opentype')
+@font-face
+    font-family: 'Uber Light'
+    src: url('../assets/font/UberMove/UberMove-Light.otf') format('opentype')
+@font-face
+    font-family: 'Uber Regular'
+    src: url('../assets/font/UberMove/UberMove-Regular.otf') format('opentype')
+
 *
     padding: 0px
     margin: 0px
@@ -28,7 +42,7 @@ h1
     font-weight: bold
     font-size: 4rem
 h2
-    font-family: 'specify'
+    font-family: 'Uber Bold'
     font-style: normal
     font-weight: bold
     font-size: 36px
@@ -37,7 +51,7 @@ h2
     text-transform: capitalize
     margin-bottom: 12px
 p, a
-    font-family: Rubik
+    font-family: Uber Regular
     font-style: normal
     font-weight: normal
     font-size: 20px
@@ -48,10 +62,16 @@ p, a
     // background: #312a2a
     // backdrop-filter: blur(24px)
 header
+    position: relative
     display: flex
     justify-content: center
-    align-items: ceter
+    align-items: center
     flex-direction: column
+    height: 620px
+    overflow: auto
+    background-image: url('../assets/img/ambiance 2/ambience@3x.png')
+    background-size: cover
+    background-position: bottom 
     .title
         width: 100%
         position: relative
@@ -74,7 +94,7 @@ header
             background: #FFFFFF
             border-radius: 46px
             padding: 18px 36px
-            font-family: Rubik
+            font-family: Uber Regular
             font-style: normal
             font-weight: normal
             font-size: 20px
@@ -88,147 +108,143 @@ header
                 padding: 8px 16px
             img
                 margin-left: 15px
-    .brand-section
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-evenly
-        div
-            display: flex
-            justify-content: center
-            align-items: center
-            height: 48px
-            width: 260px
     .separator
         margin-bottom: 40px
     p
-        font-family: Rubik
+        font-family: Uber Regular
         font-style: normal
         font-weight: normal
         font-size: 20px
         line-height: 24px
         text-align: center
-        color: #7B7B7B
-#intro
-    padding: 200px 0px 0px
-    margin-bottom: 6rem
-    .self
+        color: white
+    .ambient
         position: absolute
         bottom: 0
-        right: 12%
-        p
-            background: none
-            color: #7B7B7B !important
-    .experience
-        position: absolute
-        left: 13%
-        top: 61%
-        img
-            height: 40px
-            width: 40px
-            margin-bottom: 16px
-        p
-            background: none
-            color: #7B7B7B !important
-    .variation
-        width: 400px
-        text-align: left
-        font-style: normal
-        font-weight: bold
-        font-size: 64px
-        line-height: 89px
-        letter-spacing: 0.08em
-        background: none
-        color: transparent !important
-        -webkit-text-stroke: 1.2px white
-#selected
-    padding-top: 120px
-    & a
-        text-decoration: none !important
-    .selected
-        overflow: hidden
-        background: linear-gradient(180deg, #222323 0%, rgba(34, 35, 35, 0) 100%)
-        height: 520px
-        border-radius: 20px
-        margin-bottom: 30px
-        @media ( min-width: 640px  )
-            height: 720px
-            border-radius: 40px
-            margin-bottom: 60px
-        &__header
-            padding: 40px
-            width: 100%
-            p
-                text-transform: capitalize
-                color: #787878
-                text-align: right
-                margin-bottom: 20px
-            h3
-                font-family: Rubik
-                font-style: normal
-                font-weight: normal
-                font-size: 36px
-                line-height: 43px
-                text-align: right
-                font-weight: 400
-                margin-bottom: 20px
-            label
-                background: #2194FF
-                padding: 8px
-                font-size: 12px
-                line-height: 14px
-                text-transform: capitalize
-        &__body
-            position: relative
-            height: 100%
-            padding: 0px 40px
-            img
-                max-width: 100%
-                position: absolute
-                left: 0
-                bottom: 0
-#visual
-    padding-top: 120px
-#blogs
-    padding-top: 120px
-    // height: 70vh
-    .blogs
-        position: relative
-        padding: 20px
-        height: 488px
-        img
-            max-width: 100%
-        &::after
-            content: 'GOOD THINGS TAKE TIME'
-            z-index: 2
-            font-family: Rubik
-            font-style: normal
-            font-weight: normal
-            font-size: 3vw
-            line-height: 28px
+        left: 0
+        height: 100%
+        // width: 100%
+        z-index: -1
+main
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    flex-wrap: nowrap
+    .wrap
+        width: 1240px
+        display: flex
+        flex-direction: column
+        gap: 160px
+        #brand-section
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-evenly
+            padding: 52px 0px
+            div
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 48px
+                width: 260px
+        #about
+            display: flex
+            flex-direction: column
+            gap: 20px
+            margin-top: -80px
+            .iam
+                gap: 20px
+                width: 100%
+
+                img
+                    width: 400px
+            .desc
+                background: #232424
+                width: 100%
+                border-radius: 40px
+                padding: 64px
+                gap: 40px
+                display: flex
+                flex-direction: column
+                span
+                    background: linear-gradient(90.02deg, #5965FA 15.36%, #C654FB 53.43%, #F0A26D 84.97%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                h1
+                    font-family: Uber Medium
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 64px
+                    line-height: 76px
+                .block 
+                    .question
+                        font-family: 'Uber Regular'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 24px
+                        line-height: 32px
+                        color: #7B7B7B
+                    .answer
+                        font-family: 'Uber Regular'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 36px
+                        line-height: 43px
+                        color: #ffffff
+        #selected
+            display: flex
+            flex-direction: column
+            gap: 40px
+            .wrap
+                display: flex
+                flex-direction: column
+                gap: 60px
+            & a
+                text-decoration: none !important
+            .selected
+                overflow: hidden
+                background: linear-gradient(180deg, #222323 0%, rgba(34, 35, 35, 0) 100%)
+                height: 520px
+                border-radius: 20px
+                @media ( min-width: 640px  )
+                    height: 720px
+                    border-radius: 40px
+                &__header
+                    padding: 40px
+                    width: 100%
+                    p
+                        text-transform: capitalize
+                        color: #787878
+                        text-align: right
+                        margin-bottom: 20px
+                    h3
+                        font-family: Uber Bold
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 36px
+                        line-height: 43px
+                        text-align: right
+                        font-weight: 400
+                        margin-bottom: 20px
+                    label
+                        background: #2194FF
+                        padding: 8px
+                        font-size: 12px
+                        line-height: 14px
+                        text-transform: capitalize
+                &__body
+                    position: relative
+                    height: 100%
+                    padding: 0px 40px
+                    img
+                        max-width: 100%
+                        position: absolute
+                        left: 0
+                        bottom: 0
+        #visual
+        h2
             text-align: center
-            letter-spacing: 0.5em
-            display: flex
-            position: absolute
-            top: 0
-            left: 0
-            align-items: center
-            justify-content: center
-            height: 100%
-            width: 100%
-            @media (min-width: 480px)
-                font-size: 24px !important
-        &::before
-            content: ''
-            display: flex
-            position: absolute
-            top: 0
-            left: 0
-            height: 100%
-            width: 100%
-            z-index: 1
-            background: white
-            background: rgba(10, 10, 10, 0.7)
-            backdrop-filter: blur(24px)
+            font-family: specify
 .bintang-60
     display: flex
     margin: 40px auto
@@ -258,7 +274,7 @@ footer
         cursor: default
         a
             cursor: pointer
-            font-family: Rubik
+            font-family: Uber Regular
             font-style: normal
             text-decoration: none
             font-weight: normal
@@ -300,7 +316,11 @@ footer
                 &:nth-last-child(2)
                     margin-right: 0px
                 .nav-link
-                    padding: 0px   
+                    padding: 0px
+                    color: white
+                &.nav-link
+                    color: white
+                    font-weight: normal
             // #logo-wrapper
                 // height: 100%
                 // width: 100%
@@ -359,7 +379,7 @@ footer
             bottom: 15px
         button
             margin-bottom: 40px
-        .brand-section
+        #brand-section
             flex-wrap: wrap
             flex-direction: row
             div
@@ -417,30 +437,10 @@ footer
                 position: relative
                 img
                     position: relative
-    #intro
-        overflow: hidden
-        padding: 180px 0px 0px
-        img
-            max-width: 80vw
-        .self
-            right: 0
-            max-width: 100%
-
-        .experience
-            align-items: center
-            top: 60px
-            left: auto
+    #about
+        .iam
             img
-                height: 8vw
-        .variation
-            white-space: pre-wrap
-            width: min-content
-            font-size: 9vw
-            line-height: 135%
-            -webkit-text-stroke: .8px white
-        p
-            font-size: 3vw
-            line-height: 135%
+                width: 400px
     footer
         padding: 60px 20px
         h2
