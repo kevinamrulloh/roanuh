@@ -161,6 +161,11 @@ header .ambient {
   flex-direction: column;
   gap: 160px;
 }
+@media only screen and (max-width: 640px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+}
 
 header .wrap {
   gap: 0px;
@@ -195,9 +200,11 @@ main #about {
 main #about .iam {
   gap: 20px;
   width: 100%;
+  flex-wrap: wrap;
 }
 main #about .iam img {
   width: 400px;
+  height: 400px;
 }
 main #about .desc {
   background: #232424;
@@ -237,6 +244,8 @@ main #about .desc .block .answer {
   color: #ffffff;
 }
 main #about .desc.smaller {
+  width: 400px;
+  height: 400px;
   padding: 36px;
   justify-content: flex-end;
 }

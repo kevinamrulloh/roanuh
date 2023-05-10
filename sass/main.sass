@@ -129,6 +129,8 @@ header
     display: flex
     flex-direction: column
     gap: 160px
+    @media only screen and (max-width: 640px)
+        width: calc( 100% - 40px )  
 header
     .wrap
         gap: 0px
@@ -157,9 +159,10 @@ main
         .iam
             gap: 20px
             width: 100%
-
+            flex-wrap: wrap
             img
                 width: 400px
+                height: 400px
         .desc
             background: #232424
             width: 100%
@@ -194,6 +197,8 @@ main
                     line-height: 43px
                     color: #ffffff
         .desc.smaller
+            width: 400px
+            height: 400px
             padding: 36px
             justify-content: flex-end
             h1
@@ -211,6 +216,7 @@ main
             display: flex
             flex-direction: column
             gap: 60px
+
         & a
             text-decoration: none !important
         .selected
