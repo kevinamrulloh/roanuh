@@ -27,7 +27,7 @@
 img, svg
     max-width: 100%
 .container
-    @media ( max-width: 480px )
+    @media (max-width: 480px)
         padding: 0 20px
 html, body
     height: 100%
@@ -99,7 +99,7 @@ header
             line-height: 28px
             color: #0A0A0A
             margin-bottom: 80px
-            @media ( max-width:  480px)
+            @media (max-width:  480px)
                 font-size: 14px
                 line-height: 28px
                 font-weight: normal
@@ -129,8 +129,9 @@ header
     display: flex
     flex-direction: column
     gap: 160px
-    @media only screen and (max-width: 640px)
+    @media only screen and (max-width: 1024px)
         width: calc( 100% - 40px )  
+        gap: 120px
 header
     .wrap
         gap: 0px
@@ -145,7 +146,7 @@ main
         flex-wrap: wrap
         justify-content: space-evenly
         padding: 52px 0px
-        div
+        .inner-brand
             display: flex
             justify-content: center
             align-items: center
@@ -156,19 +157,22 @@ main
         flex-direction: column
         gap: 20px
         margin-top: -80px
+        align-items: center
         .iam
             gap: 20px
             width: 100%
             flex-wrap: wrap
+            justify-content: center
             img
                 width: 400px
-                height: 400px
+                height: 400px                
         .desc
             background: #232424
             width: 100%
             border-radius: 40px
             padding: 64px
             gap: 40px
+            
             display: flex
             flex-direction: column
             span
@@ -196,18 +200,39 @@ main
                     font-size: 36px
                     line-height: 43px
                     color: #ffffff
+            @media only screen and (max-width: 1024px)
+                h1
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 28px
+                    line-height: 36px
+                .block
+                    font-size: 16px
+                    line-height: 16px
+                    .answer
+                        font-size: 20px
+                        line-height: 28px
+                h2
+                    font-size: 20px
+                    line-height: 28px
         .desc.smaller
             width: 400px
-            height: 400px
+            aspect-ratio: 1/1
             padding: 36px
             justify-content: flex-end
+            @media screen and (max-width:480px) 
+                width: 100%
+            
             h1
                 font-size: 48px
                 line-height: 56px
     #selected
         display: flex
         flex-direction: column
+        align-items: center
         gap: 40px
+        @media only screen and (max-width: 1024px)
+            gap: 20px
         h2
             text-align: center
             font-family: specify
@@ -224,7 +249,7 @@ main
             background: linear-gradient(180deg, #222323 0%, rgba(34, 35, 35, 0) 100%)
             height: 520px
             border-radius: 20px
-            @media ( min-width: 640px  )
+            @media (min-width: 640px)
                 height: 720px
                 border-radius: 40px
             &__header
@@ -255,6 +280,7 @@ main
                 height: 100%
                 padding: 0px 40px
                 img
+                    max-height: 100%
                     max-width: 100%
                     position: absolute
                     left: 0
@@ -358,7 +384,13 @@ footer
                 .logo
                     height: 100%
 
-@media (max-width:720px)
+@media only screen and (max-width:720px)
+    main
+        #brand-selection
+            padding: 24px 0px
+
+            .inner-brand
+                height: 24px !important
     .top
         bottom: 20px
         right: 20px

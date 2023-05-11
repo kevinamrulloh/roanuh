@@ -161,9 +161,10 @@ header .ambient {
   flex-direction: column;
   gap: 160px;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .wrap {
     width: calc(100% - 40px);
+    gap: 120px;
   }
 }
 
@@ -184,7 +185,7 @@ main #brand-section {
   justify-content: space-evenly;
   padding: 52px 0px;
 }
-main #brand-section div {
+main #brand-section .inner-brand {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,11 +197,13 @@ main #about {
   flex-direction: column;
   gap: 20px;
   margin-top: -80px;
+  align-items: center;
 }
 main #about .iam {
   gap: 20px;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 main #about .iam img {
   width: 400px;
@@ -243,11 +246,36 @@ main #about .desc .block .answer {
   line-height: 43px;
   color: #ffffff;
 }
+@media only screen and (max-width: 1024px) {
+  main #about .desc h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  main #about .desc .block {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  main #about .desc .block .answer {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  main #about .desc h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 main #about .desc.smaller {
   width: 400px;
-  height: 400px;
+  aspect-ratio: 1/1;
   padding: 36px;
   justify-content: flex-end;
+}
+@media screen and (max-width: 480px) {
+  main #about .desc.smaller {
+    width: 100%;
+  }
 }
 main #about .desc.smaller h1 {
   font-size: 48px;
@@ -256,7 +284,13 @@ main #about .desc.smaller h1 {
 main #selected {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  main #selected {
+    gap: 20px;
+  }
 }
 main #selected h2 {
   text-align: center;
@@ -316,6 +350,7 @@ main #selected .selected__body {
   padding: 0px 40px;
 }
 main #selected .selected__body img {
+  max-height: 100%;
   max-width: 100%;
   position: absolute;
   left: 0;
@@ -431,7 +466,13 @@ footer .social a {
     height: 100%;
   }
 }
-@media (max-width: 720px) {
+@media only screen and (max-width: 720px) {
+  main #brand-selection {
+    padding: 24px 0px;
+  }
+  main #brand-selection .inner-brand {
+    height: 24px !important;
+  }
   .top {
     bottom: 20px;
     right: 20px;
