@@ -431,11 +431,14 @@ footer .social a {
   header {
     height: 322px;
   }
+  header .wrap {
+    height: 100%;
+  }
   header .title {
     margin: 0px 6vw;
     width: auto;
-    font-size: clamp(24px, 2.4vw, 48px);
-    line-height: 33px;
+    font-size: clamp(24px, 4vw, 64px);
+    line-height: clamp(33px, 3vw, 89px);
     font-weight: normal;
     text-align: center;
     background: -webkit-linear-gradient(90.03deg, #FFFFFF 0.01%, #ADC1E0 99.96%);
@@ -449,7 +452,7 @@ footer .social a {
   header .subtitle {
     font-size: 12px;
     line-height: 14px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
   header > img {
     height: 30%;
@@ -470,12 +473,19 @@ footer .social a {
     line-height: 36px;
   }
   main #about .desc .block {
-    font-size: 16px;
-    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #about .desc .block .question {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0px;
   }
   main #about .desc .block .answer {
     font-size: 20px;
     line-height: 28px;
+    margin: 0px;
   }
   main #about .desc h2 {
     font-size: 20px;
