@@ -656,4 +656,9 @@ footer .social a {
   main .wrap #brand-selection .inner-brand {
     width: 130px !important;
   }
+}
+@media (width >= 2000px) {
+  header {
+    height: calc(620px + 16vh);
+  }
 }/*# sourceMappingURL=main.css.map */
